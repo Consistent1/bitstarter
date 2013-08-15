@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
-    <title>Xpanda - The Freedom To Abstract</title>
+    <title>Xpanda - Data your Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
@@ -137,9 +138,9 @@
           <a class="brand" href="#">Xpanda</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="play.html">Play</a></li>
+              <li class="active"><a href="#">Play</a></li>
 	      <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -167,8 +168,17 @@
         </div>
       </div>
       <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
+        <div class="span2 offset1 area1">
+          Area1
+        </div>
+        <div class="span2 area4">
+          Area4<br />
+	  <div>
+	    <label>Name:</label>
+	    <input type="text" ng-model="yourName" placeholder="Enter your name">
+	    <hr>
+	    <h5>Welcome {{yourName}}!</h5>
+	  </div>
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -201,27 +211,19 @@
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 1%;"></div>
-              <div class="bar bar-warning" style="width: 99%;"></div>
+              <div class="bar bar-success" style="width: 35%;"></div>
+              <div class="bar bar-warning" style="width: 65%;"></div>
             </div>
           </div>
           </div>
           <div class="row-fluid">
-          <div class="span6 offset3 order">
-            <a class="coinbase-button" data-button-style="custom_large" data-button-text="Support using Bitcoin" data-code="77eab55df04d3d0aa989d3d55d0969d9" href="https://coinbase.com/checkouts/77eab55df04d3d0aa989d3d55d0969d9">Support using Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+          <div class="span6 offset3 area7">
+            Area7
           </div>
           </div>
           <div class="row-fluid">
-          <div class="span8 offset2 social">
-            <!-- AddThis Button BEGIN -->
-	    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-	      <a class="addthis_button_twitter"></a>
-	      <a class="addthis_button_facebook"></a>
-	      <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
-	    </div>
-	    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-	    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fd7a6e44c51831"></script>
-	    <!-- AddThis Button END -->
+          <div class="span8 offset2 area8">
+            Area8
           </div>
           </div>
         </div>
@@ -236,18 +238,17 @@
         <div class="span5 offset1 asset">
           <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
         </div>
-        <div class="span5 copy">
+        <div class="span5 area9">
           <p>
-            Xpanda offers a radically new approach to information management. Think of a marriage between 'the social web' and 'the semantic web' (remember?). Their offspring - reproducible-reasoning' is what Xpanda is all about.<br />                                                  Xpanda is a flexible knowledge repository, allowing the reuse of abstractions and information, while retaining (or generating new) context.<br />
-It gives you the power to explore the relationships, explicit or implied, which exists between your 'information' and your 'reasoning'.<br />
+            Area9<br />
           </p>
         </div>
       </div>
 
       <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
+        <div class="span5 offset1 copy area10">
           <p>
-            Xpanda is an open source project. The reference implementation will use Clojure and JavaScript, but developers are encouraged to implement the Xpanda-protocol using the tool stack of their choice.
+            Area10
           </p>
         </div>
         <div class="span5 asset">
